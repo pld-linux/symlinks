@@ -49,7 +49,7 @@ gcc $RPM_OPT_FLAGS -o symlinks symlinks.c
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man8}
 
-install -s symlinks $RPM_BUILD_ROOT/usr/bin
+install -s symlinks $RPM_BUILD_ROOT%{_bindir}
 install symlinks.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) /usr/bin/symlinks
+%attr(755,root,root) %{_bindir}/symlinks
 %{_mandir}/man8/symlinks.8*
 
 %changelog
