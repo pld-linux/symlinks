@@ -47,7 +47,7 @@ gcc $RPM_OPT_FLAGS -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/{bin,man/man8}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
 install -s symlinks $RPM_BUILD_ROOT%{_bindir}
 install symlinks.8 $RPM_BUILD_ROOT%{_mandir}/man8
