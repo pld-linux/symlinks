@@ -1,5 +1,5 @@
 Summary:	Symbolic link sanity checker
-Summary(de):	Symbolic-Link-Sanity-Checker 
+Summary(de):	Symbolic-Link-Sanity-Checker
 Summary(es):	Verificador de validez para links simbólicos
 Summary(fr):	Vérificateur de la cohérence des liens symboliques
 Summary(pl):	Sprawdzanie poprawno¶ci symlinków
