@@ -50,9 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man8}
 
 install -s symlinks $RPM_BUILD_ROOT/usr/bin
-install symlinks.8 $RPM_BUILD_ROOT/usr/man/man8
+install symlinks.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
-gzip -9fn $RPM_BUILD_ROOT/usr/man/man8/*
+gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) /usr/bin/symlinks
-/usr/man/man8/symlinks.8*
+%{_mandir}/man8/symlinks.8*
 
 %changelog
 * Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
