@@ -1,14 +1,15 @@
-Summary:     Symbolic link sanity checker
-Summary(de): Symbolic-Link-Sanity-Checker 
-Summary(fr): Vérificateur de la cohérence des liens symboliques
-Summary(pl): Sprawdzanie poprawno¶ci symlinków
-Summary(tr): Simgesel baðlantý denetleyici
-Name:        symlinks
-Version:     1.2
-Release:     3
-Group:       Utilities/File
-Copyright:   distributable
-Source:      ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
+Summary:     	Symbolic link sanity checker
+Summary(de): 	Symbolic-Link-Sanity-Checker 
+Summary(fr): 	Vérificateur de la cohérence des liens symboliques
+Summary(pl): 	Sprawdzanie poprawno¶ci symlinków
+Summary(tr): 	Simgesel baðlantý denetleyici
+Name:        	symlinks
+Version:     	1.2
+Release:     	3
+Group:       	Utilities/File
+Group(pl):	Narzêdzia/Pliki
+Copyright:  	distributable
+Source:      	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 Buildroot:   /tmp/%{name}-%{version}-root
 
 %description
@@ -47,17 +48,27 @@ gcc $RPM_OPT_FLAGS -o symlinks symlinks.c
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man8}
+
 install -s symlinks $RPM_BUILD_ROOT/usr/bin
 install symlinks.8 $RPM_BUILD_ROOT/usr/man/man8
+
+gzip -9fn $RPM_BUILD_ROOT/usr/man/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%attr(755, root, root) /usr/bin/symlinks
-%attr(644, root,  man) /usr/man/man8/symlinks.8
+%defattr(644,root,root,755)
+%attr(755,root,root) /usr/bin/symlinks
+/usr/man/man8/symlinks.8*
 
 %changelog
+* Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
+  [1.2-4]
+- removed man group from man pages
+- added Group(pl)
+- compiled on rpm 3
+
 * Fri Sep 25 1998 Marcin 'Qrczak' Kowalczyk <qrczak@knm.org.pl>
   [1.2-3]
 - added full %attr description in %files,
