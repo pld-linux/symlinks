@@ -7,7 +7,7 @@ Summary(pt_BR):	Verificador de validade para links simbólicos
 Summary(tr):	Simgesel baðlantý denetleyici
 Name:		symlinks
 Version:	1.2
-Release:	15
+Release:	16
 License:	distributable
 Group:		Applications/File
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
@@ -58,10 +58,10 @@ dönüþtürür.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
-%{__cc} %{rpmcflags} -o symlinks symlinks.c
+%{__cc} %{rpmldflags} %{rpmcflags} -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
