@@ -44,13 +44,13 @@ mutlak simgesel baðlantýlarý baðýl simgesel baðlantýlara dönüþtürür.
 %setup -q
 
 %build
-gcc $RPM_OPT_FLAGS -o symlinks symlinks.c
+gcc $RPM_OPT_FLAGS -s -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
-install -s symlinks $RPM_BUILD_ROOT%{_bindir}
+install symlinks $RPM_BUILD_ROOT%{_bindir}
 install symlinks.8 $RPM_BUILD_ROOT%{_mandir}/man8
 
 gzip -9fn $RPM_BUILD_ROOT%{_mandir}/man8/*
