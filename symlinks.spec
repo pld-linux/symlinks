@@ -10,8 +10,6 @@ Version:	1.2
 Release:	15
 License:	distributable
 Group:		Applications/File
-Group(de):	Applikationen/Datei
-Group(pl):	Aplikacje/Pliki
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 Patch0:		%{name}-fixman.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
