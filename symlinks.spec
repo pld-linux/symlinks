@@ -11,6 +11,7 @@ Release:	15
 License:	distributable
 Group:		Applications/File
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
+# Source0-md5:	b4bab0a5140e977c020d96e7811cec61
 Patch0:		%{name}-fixman.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
