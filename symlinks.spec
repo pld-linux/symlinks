@@ -61,31 +61,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/symlinks
 %{_mandir}/man8/symlinks.8*
-
-%changelog
-* Thu Apr 22 1999 Artur Frysiak <wiget@pld.org.pl>
-  [1.2-4]
-- removed man group from man pages
-- added Group(pl)
-- compiled on rpm 3
-
-* Fri Sep 25 1998 Marcin 'Qrczak' Kowalczyk <qrczak@knm.org.pl>
-  [1.2-3]
-- added full %attr description in %files,
-- removed `-u root -o root' in %install, allowing building from non-root
-  account,
-- added pl translation,
-- use %{name} and %{version} macros,
-- added using $RPM_OPT_FLAGS on compile time,
-- added `rm -rf $ROM_BUILD_ROOT' on top %install.
-
-* Mon Apr 27 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Mon Oct 20 1997 Otto Hammersmith <otto@redhat.com>
-- changed build root to /var/tmp, not /var/lib
-- updated to version 1.2
-
-* Wed Jul 09 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
-- build-rooted
