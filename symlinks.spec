@@ -5,10 +5,11 @@ Summary(pl):	Sprawdzanie poprawno¶ci symlinków
 Summary(tr):	Simgesel baðlantý denetleyici
 Name:		symlinks
 Version:	1.2
-Release:	9
-Group:		Utilities/File
-Group(pl):	Narzêdzia/Pliki
-Copyright:	distributable
+Release:	13
+LIcense:	Distributable
+Group:		Applications/File
+Group(de):	Applikationen/Datei
+Group(pl):	Aplikacje/Pliki
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,7 +47,7 @@ dönüþtürür.
 %setup -q
 
 %build
-gcc $RPM_OPT_FLAGS -s -o symlinks symlinks.c
+%{__cc} %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -54,8 +55,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man8}
 
 install symlinks $RPM_BUILD_ROOT%{_bindir}
 install symlinks.8 $RPM_BUILD_ROOT%{_mandir}/man8
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man8/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
