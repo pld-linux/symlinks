@@ -30,8 +30,8 @@ absents (liens pendants). Il peut aussi convertir automatiquement les
 liens absolus en liens relatifs.
 
 %description -l pl
-Program wyszukuje ró¿ne problemy zzi±zane z dowi±zaniami symbolicznymi, w
-tym dowizania pokazuj±ce na nieistniej±ce pliki. Mo¿e te¿ automatycznie
+Program wyszukuje ró¿ne problemy zwi±zane z dowi±zaniami symbolicznymi, 
+w tym dowi±zania pokazuj±ce na nieistniej±ce pliki. Mo¿e te¿ automatycznie
 konwertowaæ bezwzglêdne dowi±zania symboliczne na wzglêdne.
 
 %description -l tr
