@@ -49,7 +49,7 @@ dönüþtürür.
 %patch -p1
 
 %build
-%{__cc} %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -o symlinks symlinks.c
+%{__cc} %{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS} -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
