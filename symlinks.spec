@@ -11,6 +11,7 @@ Group:		Applications/File
 Group(de):	Applikationen/Datei
 Group(pl):	Aplikacje/Pliki
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
+Patch0:		%{name}-fixman.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,6 +46,7 @@ dönüþtürür.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %{__cc} %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g} -o symlinks symlinks.c
