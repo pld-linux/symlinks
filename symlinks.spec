@@ -10,7 +10,7 @@ Group:       	Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Copyright:  	distributable
 Source:      	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-Buildroot:   	/tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This program check for a number of problems with symlinks on a system,
