@@ -1,11 +1,13 @@
 Summary:	Symbolic link sanity checker
 Summary(de):	Symbolic-Link-Sanity-Checker 
+Summary(es):	Verificador de validez para links simbólicos
 Summary(fr):	Vérificateur de la cohérence des liens symboliques
 Summary(pl):	Sprawdzanie poprawno¶ci symlinków
+Summary(pt_BR):	Verificador de validade para links simbólicos
 Summary(tr):	Simgesel baðlantý denetleyici
 Name:		symlinks
 Version:	1.2
-Release:	13
+Release:	15
 License:	distributable
 Group:		Applications/File
 Group(de):	Applikationen/Datei
@@ -26,6 +28,11 @@ Zusammenhang mit Symlinks, einschließlich Symlinks, die auf nicht
 vorhandene Dateien zeigen (baumelnde Symlinks). Außerdem kann es
 absolute Symlinks automatisch in relative verwandeln.
 
+%description -l es
+Este programa chequea varios problemas con symlinks en un sistema,
+incluido symlinks que apuntan para archivo inexistente. Puede también,
+automáticamente, convertir symlinks absolutos a symlinks relativos.
+
 %description -l fr
 Ce programme vérifie un certain nombre de problèmes avec les liens
 symboliques sur un système, dont ceux qui pointent vers des fichiers
@@ -37,6 +44,12 @@ Program wyszukuje ró¿ne problemy zwi±zane z dowi±zaniami
 symbolicznymi, w tym dowi±zania pokazuj±ce na nieistniej±ce pliki.
 Mo¿e te¿ automatycznie konwertowaæ bezwzglêdne dowi±zania symboliczne
 na wzglêdne.
+
+%description -l pt_BR
+Este programa checa vários problemas com symlinks em um sistema,
+incluindo symlinks que apontam para arquivo inexistentes. Ele pode
+também automaticamente converter symlinks absolutos para symlinks
+relativos.
 
 %description -l tr
 Bu program sistemdeki simgesel baðlantýlarla ilgili sorunlarý
