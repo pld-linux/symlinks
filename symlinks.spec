@@ -5,7 +5,7 @@ Summary(pl): 	Sprawdzanie poprawno¶ci symlinków
 Summary(tr): 	Simgesel baðlantý denetleyici
 Name:        	symlinks
 Version:     	1.2
-Release:     	4
+Release:     	6
 Group:       	Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Copyright:  	distributable
@@ -13,25 +13,26 @@ Source:      	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-This program check for a number of problems with symlinks on a system,
-including symlinks which point to nonexistant files (dangling symlinks).
-It can also automatically convert absolute symlinks to relative symlinks.
+The symlinks utility performs maintenance on symbolic links.  Symlinks
+checks for symlink problems, including dangling symlinks which point to
+nonexistent files.  Symlinks can also automatically convert absolute
+symlinks to relative symlinks.
 
 %description -l de
-Dieses Programm prüft das System auf eine Reihe von Problemen im 
-Zusammenhang mit Symlinks, einschließlich Symlinks, die auf nicht 
-vorhandene Dateien zeigen (baumelnde Symlinks). Außerdem kann es 
-absolute Symlinks automatisch in relative verwandeln. 
+Dieses Programm prüft das System auf eine Reihe von Problemen im
+Zusammenhang mit Symlinks, einschließlich Symlinks, die auf nicht vorhandene
+Dateien zeigen (baumelnde Symlinks). Außerdem kann es absolute Symlinks
+automatisch in relative verwandeln.
 
 %description -l fr
 Ce programme vérifie un certain nombre de problèmes avec les liens
-symboliques sur un système, dont ceux qui pointent vers des fichiers
-absents (liens pendants). Il peut aussi convertir automatiquement les
-liens absolus en liens relatifs.
+symboliques sur un système, dont ceux qui pointent vers des fichiers absents
+(liens pendants). Il peut aussi convertir automatiquement les liens absolus
+en liens relatifs.
 
 %description -l pl
-Program wyszukuje ró¿ne problemy zwi±zane z dowi±zaniami symbolicznymi, 
-w tym dowi±zania pokazuj±ce na nieistniej±ce pliki. Mo¿e te¿ automatycznie
+Program wyszukuje ró¿ne problemy zwi±zane z dowi±zaniami symbolicznymi, w
+tym dowi±zania pokazuj±ce na nieistniej±ce pliki. Mo¿e te¿ automatycznie
 konwertowaæ bezwzglêdne dowi±zania symboliczne na wzglêdne.
 
 %description -l tr
