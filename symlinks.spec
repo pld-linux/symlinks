@@ -6,7 +6,7 @@ Summary(tr):	Simgesel baðlantý denetleyici
 Name:		symlinks
 Version:	1.2
 Release:	13
-LIcense:	Distributable
+License:	distributable
 Group:		Applications/File
 Group(de):	Applikationen/Datei
 Group(pl):	Aplikacje/Pliki
