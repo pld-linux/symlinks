@@ -5,12 +5,12 @@ Summary(pl): 	Sprawdzanie poprawno¶ci symlinków
 Summary(tr): 	Simgesel baðlantý denetleyici
 Name:        	symlinks
 Version:     	1.2
-Release:     	3
+Release:     	4
 Group:       	Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Copyright:  	distributable
 Source:      	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-Buildroot:   /tmp/%{name}-%{version}-root
+Buildroot:   	/tmp/%{name}-%{version}-root
 
 %description
 This program check for a number of problems with symlinks on a system,
