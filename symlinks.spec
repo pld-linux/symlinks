@@ -10,7 +10,7 @@ Group:       	Utilities/File
 Group(pl):	Narzêdzia/Pliki
 Copyright:  	distributable
 Source:      	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The symlinks utility performs maintenance on symbolic links.  Symlinks
