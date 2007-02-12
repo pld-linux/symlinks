@@ -1,10 +1,10 @@
 Summary:	Symbolic link sanity checker
-Summary(de):	Symbolic-Link-Sanity-Checker
-Summary(es):	Verificador de validez para links simbólicos
-Summary(fr):	Vérificateur de la cohérence des liens symboliques
-Summary(pl):	Sprawdzanie poprawno¶ci symlinków
-Summary(pt_BR):	Verificador de validade para links simbólicos
-Summary(tr):	Simgesel bağlantı denetleyici
+Summary(de.UTF-8):   Symbolic-Link-Sanity-Checker
+Summary(es.UTF-8):   Verificador de validez para links simbÃ³licos
+Summary(fr.UTF-8):   VÃ©rificateur de la cohÃ©rence des liens symboliques
+Summary(pl.UTF-8):   Sprawdzanie poprawnoÅ›ci symlinkÃ³w
+Summary(pt_BR.UTF-8):   Verificador de validade para links simbÃ³licos
+Summary(tr.UTF-8):   Simgesel baÄŸlantÄ± denetleyici
 Name:		symlinks
 Version:	1.2
 Release:	16
@@ -21,40 +21,40 @@ checks for symlink problems, including dangling symlinks which point
 to nonexistent files. Symlinks can also automatically convert absolute
 symlinks to relative symlinks.
 
-%description -l de
-Dieses Programm prüft das System auf eine Reihe von Problemen im
-Zusammenhang mit Symlinks, einschließlich Symlinks, die auf nicht
-vorhandene Dateien zeigen (baumelnde Symlinks). Außerdem kann es
+%description -l de.UTF-8
+Dieses Programm prÃ¼ft das System auf eine Reihe von Problemen im
+Zusammenhang mit Symlinks, einschlieÃŸlich Symlinks, die auf nicht
+vorhandene Dateien zeigen (baumelnde Symlinks). AuÃŸerdem kann es
 absolute Symlinks automatisch in relative verwandeln.
 
-%description -l es
+%description -l es.UTF-8
 Este programa chequea varios problemas con symlinks en un sistema,
-incluido symlinks que apuntan para archivo inexistente. Puede también,
-automáticamente, convertir symlinks absolutos a symlinks relativos.
+incluido symlinks que apuntan para archivo inexistente. Puede tambiÃ©n,
+automÃ¡ticamente, convertir symlinks absolutos a symlinks relativos.
 
-%description -l fr
-Ce programme vérifie un certain nombre de problèmes avec les liens
-symboliques sur un système, dont ceux qui pointent vers des fichiers
+%description -l fr.UTF-8
+Ce programme vÃ©rifie un certain nombre de problÃ¨mes avec les liens
+symboliques sur un systÃ¨me, dont ceux qui pointent vers des fichiers
 absents (liens pendants). Il peut aussi convertir automatiquement les
 liens absolus en liens relatifs.
 
-%description -l pl
-Program wyszukuje ró¿ne problemy zwi±zane z dowi±zaniami
-symbolicznymi, w tym dowi±zania pokazuj±ce na nieistniej±ce pliki.
-Mo¿e te¿ automatycznie konwertowaæ bezwzglêdne dowi±zania symboliczne
-na wzglêdne.
+%description -l pl.UTF-8
+Program wyszukuje rÃ³Å¼ne problemy zwiÄ…zane z dowiÄ…zaniami
+symbolicznymi, w tym dowiÄ…zania pokazujÄ…ce na nieistniejÄ…ce pliki.
+MoÅ¼e teÅ¼ automatycznie konwertowaÄ‡ bezwzglÄ™dne dowiÄ…zania symboliczne
+na wzglÄ™dne.
 
-%description -l pt_BR
-Este programa checa vários problemas com symlinks em um sistema,
+%description -l pt_BR.UTF-8
+Este programa checa vÃ¡rios problemas com symlinks em um sistema,
 incluindo symlinks que apontam para arquivo inexistentes. Ele pode
-também automaticamente converter symlinks absolutos para symlinks
+tambÃ©m automaticamente converter symlinks absolutos para symlinks
 relativos.
 
-%description -l tr
-Bu program sistemdeki simgesel bağlantılarla ilgili sorunları
-(varolmayan bir dosyayı gösteren simgesel bağlantılar gibi) kontrol
-eder. Ayrıca, mutlak simgesel bağlantıları bağıl simgesel bağlantılara
-dönüştürür.
+%description -l tr.UTF-8
+Bu program sistemdeki simgesel baÄŸlantÄ±larla ilgili sorunlarÄ±
+(varolmayan bir dosyayÄ± gÃ¶steren simgesel baÄŸlantÄ±lar gibi) kontrol
+eder. AyrÄ±ca, mutlak simgesel baÄŸlantÄ±larÄ± baÄŸÄ±l simgesel baÄŸlantÄ±lara
+dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
 
 %prep
 %setup -q
