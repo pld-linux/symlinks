@@ -1,10 +1,10 @@
 Summary:	Symbolic link sanity checker
-Summary(de.UTF-8):   Symbolic-Link-Sanity-Checker
-Summary(es.UTF-8):   Verificador de validez para links simbólicos
-Summary(fr.UTF-8):   Vérificateur de la cohérence des liens symboliques
-Summary(pl.UTF-8):   Sprawdzanie poprawności symlinków
-Summary(pt_BR.UTF-8):   Verificador de validade para links simbólicos
-Summary(tr.UTF-8):   Simgesel bağlantı denetleyici
+Summary(de.UTF-8):	Symbolic-Link-Sanity-Checker
+Summary(es.UTF-8):	Verificador de validez para links simbólicos
+Summary(fr.UTF-8):	Vérificateur de la cohérence des liens symboliques
+Summary(pl.UTF-8):	Sprawdzanie poprawności symlinków
+Summary(pt_BR.UTF-8):	Verificador de validade para links simbólicos
+Summary(tr.UTF-8):	Simgesel bağlantı denetleyici
 Name:		symlinks
 Version:	1.2
 Release:	16
