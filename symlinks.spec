@@ -7,7 +7,7 @@ Summary(pt_BR.UTF-8):	Verificador de validade para links simbólicos
 Summary(tr.UTF-8):	Simgesel bağlantı denetleyici
 Name:		symlinks
 Version:	1.2
-Release:	23
+Release:	24
 License:	distributable
 Group:		Applications/File
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
