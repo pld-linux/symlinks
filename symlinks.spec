@@ -6,13 +6,12 @@ Summary(pl.UTF-8):	Sprawdzanie poprawności symlinków
 Summary(pt_BR.UTF-8):	Verificador de validade para links simbólicos
 Summary(tr.UTF-8):	Simgesel bağlantı denetleyici
 Name:		symlinks
-Version:	1.2
-Release:	24
+Version:	1.4
+Release:	1
 License:	distributable
 Group:		Applications/File
 Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-# Source0-md5:	b4bab0a5140e977c020d96e7811cec61
-Patch0:		%{name}-fixman.patch
+# Source0-md5:	c38ef760574c25c8a06fd2b5b141307d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -58,10 +57,9 @@ dönüştürür.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
-%{__cc} %{rpmldflags} %{rpmcflags} -o symlinks symlinks.c
+%{__cc} %{rpmldflags} %{rpmcflags} %{rpmcppflags} -o symlinks symlinks.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
